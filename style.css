@@ -1,0 +1,117 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box; 
+}
+body{
+	display: flex;
+	position: relative;
+	background-color: #53545d;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+}
+label{
+	position: relative;
+	margin: 0px 10px;
+	cursor: pointer;
+}
+label input{
+
+	appearance: none;
+	display: none;
+}
+label span{
+	width: 200px;
+	height: 200px;
+	display: block;
+	background-color: #292b3e;
+	border-radius: 50%;
+	box-shadow: inset 0px 2px 1px rgba(0,0,0,0.4),
+	            inset 0px 2px 1px rgba(0,0,0,0.4),
+	            inset 0px -1px 1px rgba(0,0,0,0.4);
+}
+label .indicator{
+	position: absolute;
+	top: 0%;
+	left: 0%;
+	background-color: #212124;
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	box-shadow: 0px 2px 5px rgba(0,0,0,0.7),
+	           inset 0px 1px 3px rgba(0,0,0,0.6);
+}
+label .indicator::before{
+	content: '';
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #ff1010;
+    box-shadow: 0px 0px 4px #ff1010,
+                0px 0px 8px #ff1010,
+                0px 0px 12px #ff1010,
+                0px 0px 15px #ff1010,
+                0px 0px 18px #ff1010,
+                0px 0px 21px #ff1010,
+                0px 0px 25px #ff1010,
+                0px 0px 28px #ff1010;
+
+}
+label input:checked ~ .indicator::before{
+	content: '';
+	background-color: #64fe85;
+	box-shadow: 0px 0px 4px #64fe85,
+                0px 0px 8px #64fe85,
+                0px 0px 12px #64fe85,
+                0px 0px 15px #64fe85,
+                0px 0px 18px #64fe85,
+                0px 0px 21px #64fe85,
+                0px 0px 25px #64fe85,
+                0px 0px 28px #64fe85;
+     transition: 4s;           
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
